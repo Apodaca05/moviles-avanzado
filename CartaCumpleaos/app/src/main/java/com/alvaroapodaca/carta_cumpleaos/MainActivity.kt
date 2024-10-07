@@ -1,4 +1,4 @@
-package com.diegomelgarejo.happybirthday
+package com.alvaroapodaca.carta_cumpleaos
 
 import android.os.Bundle
 import androidx.activity.ComponentActivity
@@ -7,7 +7,6 @@ import androidx.compose.foundation.Image
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.Column
-import androidx.compose.foundation.layout.Row
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.padding
 import androidx.compose.material3.MaterialTheme
@@ -23,13 +22,13 @@ import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
-import com.diegomelgarejo.happybirthday.ui.theme.HappyBirthdayTheme
+import com.alvaroapodaca.carta_cumpleaos.ui.theme.CartaCumpleañosTheme
 
 class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContent {
-            HappyBirthdayTheme {
+            CartaCumpleañosTheme {
                 // A surface container using the 'background' color from the theme
                 Surface(
                     modifier = Modifier.fillMaxSize(),
@@ -100,7 +99,7 @@ fun GreetingImage(message: String, from: String, modifier: Modifier = Modifier) 
 @Preview(showBackground = true)
 @Composable
 fun GreetingPreview() {
-    HappyBirthdayTheme {
+    CartaCumpleañosTheme {
 
         GreetingImage( message = stringResource(R.string.happy_birthday_text),
             from = stringResource(R.string.signature_text),
